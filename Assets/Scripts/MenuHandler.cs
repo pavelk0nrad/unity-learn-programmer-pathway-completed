@@ -6,12 +6,10 @@ public class MenuHandler : MonoBehaviour
 {
     public TMP_InputField playerNameInput;
     
-    // Proměnná pro uložení textu z InputField
     private string playerName = "";
     
     void Start()
     {
-        // Nastav event listener pro TMP InputField
         if (playerNameInput != null)
         {
             playerNameInput.onValueChanged.AddListener(OnPlayerNameChanged);
